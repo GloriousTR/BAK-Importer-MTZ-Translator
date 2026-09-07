@@ -1,0 +1,30 @@
+# Android / Gradle
+.gradle/
+.kotlin/
+.idea/
+**/build/
+local.properties
+*.iml
+
+# Signing and credentials
+*.jks
+*.keystore
+keystore.properties
+secrets.properties
+.env
+.env.*
+
+# Local outputs and diagnostics
+dist/
+test-artifacts/
+*.log
+*.jsonl
+app_latest_state.png
+app_new_logo.png
+device-after-convert.png
+local_home.png
+screen*.png
+
+# Operating systems
+.DS_Store
+Thumbs.db

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedpref" path="device_backup_state.xml" />
+        <exclude domain="sharedpref" path="ai_translation_settings.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="device_backup_state.xml" />
+        <exclude domain="sharedpref" path="ai_translation_settings.xml" />
+    </device-transfer>
+</data-extraction-rules>

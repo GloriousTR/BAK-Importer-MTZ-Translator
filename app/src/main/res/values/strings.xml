@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HyperOS BAK Importer</string>
+    <string name="app_subtitle">BAK Importer and MTZ Translator</string>
+
+    <!-- Navigation & Tabs -->
+    <string name="tab_import">BAK Importer</string>
+    <string name="tab_mtz">MTZ Translator</string>
+    <string name="tab_backups">AllBackup Folders</string>
+    <string name="tab_guide">Guide</string>
+
+    <!-- Overlay menu -->
+    <string name="menu_title">Menu</string>
+    <string name="menu_subtitle">Translation settings, diagnostics and app information</string>
+    <string name="menu_close">Close</string>
+    <string name="diagnostics_menu_description">Record the complete rootless flow and share it as one package</string>
+    <string name="about_menu_description">Version, capabilities and privacy information</string>
+    <string name="ai_settings_menu_description">Configure advanced API translation with your personal API key</string>
+
+    <!-- Advanced API Translation -->
+    <string name="ai_settings_title">Advanced API Translation</string>
+    <string name="ai_settings_description">When enabled, related theme strings are sent to the AI together for context. On-device translation is used automatically when a result fails validation.</string>
+    <string name="ai_optional_notice">An API is not required. Free on-device translation remains available without a key; its language model may download on first use.</string>
+    <string name="ai_translator_section">AI Translator</string>
+    <string name="ai_provider_label">Model Provider</string>
+    <string name="ai_endpoint_label">Custom API endpoint</string>
+    <string name="ai_endpoint_help">OpenAI-compatible HTTPS base URL or /chat/completions endpoint</string>
+    <string name="ai_model_label">Model</string>
+    <string name="ai_model_help">Choose a model from the list or enter its name.</string>
+    <string name="ai_api_key_label">Personal API key</string>
+    <string name="ai_api_key_placeholder">Enter your API key</string>
+    <string name="ai_api_key_saved_placeholder">An encrypted key is stored</string>
+    <string name="ai_api_key_help">You can enter multiple comma-separated keys. Leave blank to keep the key stored for this provider.</string>
+    <string name="ai_system_prompt_label">System Prompt</string>
+    <string name="ai_user_prompt_label">User Prompt</string>
+    <string name="ai_use_context_label">Use Context</string>
+    <string name="ai_use_context_help">Improves theme translation consistency at the cost of more tokens.</string>
+    <string name="ai_default_value">Default</string>
+    <string name="ai_not_selected">Not selected</string>
+    <string name="ai_model_key_first">Enter this provider\'s API key before loading its live model list.</string>
+    <string name="ai_models_empty">The provider returned no usable models.</string>
+    <string name="ai_models_load_failed">Failed to load the model list.</string>
+    <string name="ai_test">Test</string>
+    <string name="ai_testing">Testing…</string>
+    <string name="ai_test_success">Connection successful · Settings → %1$s</string>
+    <string name="ai_privacy_notice">The API key is encrypted on this device with Android Keystore, excluded from backups, and never included in diagnostics. Only extracted visible strings are sent directly to the API provider you select. Provider charges apply to your account.</string>
+    <string name="ai_api_key_required">Enter an API key to enable advanced API translation.</string>
+    <string name="ai_settings_save">Save Settings</string>
+    <string name="ai_settings_saved">Translation settings saved.</string>
+    <string name="ai_api_key_remove">Remove Stored API Key</string>
+    <string name="ai_api_key_removed">API key removed from this device.</string>
+
+    <!-- Live Diagnostics -->
+    <string name="diagnostics_title">Live Diagnostics</string>
+    <string name="diagnostics_description">Records BAK selection, optional translation, restore and hand-off to Themes. Nothing is sent until you tap Share.</string>
+    <string name="diagnostics_session">Session: %1$s</string>
+    <string name="diagnostics_phase">Last status: %1$s</string>
+    <string name="diagnostics_start_test">Start a new test recording</string>
+    <string name="diagnostics_new_session_started">New test recording started</string>
+    <string name="diagnostics_session_started_access_required">Test started, but Themes feedback access is off. Enable it below before opening Backup or Themes; otherwise the system part of the report will be incomplete.</string>
+    <string name="diagnostics_feedback_access">Themes feedback access</string>
+    <string name="diagnostics_access_enabled">Enabled; screen transitions and toast messages from Themes and Backup can be captured.</string>
+    <string name="diagnostics_access_disabled">Disabled; the error shown by Themes cannot be captured automatically.</string>
+    <string name="diagnostics_access_scope">This optional rootless access is limited to Xiaomi Themes and MIUI Backup. During an active test it records visible text and a limited number of screenshots, but never shares them automatically. Do not start a test while personal account details are visible.</string>
+    <string name="diagnostics_open_accessibility">Open diagnostics access</string>
+    <string name="diagnostics_stop_capture">Stop live capture</string>
+    <string name="diagnostics_resume_capture">Resume live capture</string>
+    <string name="diagnostics_accessibility_label">BAK Importer Diagnostics Access</string>
+    <string name="diagnostics_accessibility_description">Adds visible text and a limited number of screenshots from Xiaomi Themes and MIUI Backup to the report only while a test is active.</string>
+    <string name="diagnostics_reproduce_title">Reproduce the problem</string>
+    <string name="diagnostics_reproduce_steps">1. Start a test. 2. Prepare a BAK with or without translation. 3. Restore the backup. 4. Tap Apply in Themes. 5. Return here, mark the result and share the report.</string>
+    <string name="diagnostics_open_restore">Backup</string>
+    <string name="diagnostics_open_themes">Themes</string>
+    <string name="diagnostics_mark_error">Error occurred</string>
+    <string name="diagnostics_mark_success">Succeeded</string>
+    <string name="diagnostics_error_note">Error you saw</string>
+    <string name="diagnostics_error_note_hint">Example: Could not connect — downloadRight|409</string>
+    <string name="diagnostics_save_note">Save error note</string>
+    <string name="diagnostics_note_saved">Error note saved</string>
+    <string name="diagnostics_evidence_title">Screen evidence</string>
+    <string name="diagnostics_evidence_description">Optionally attach a screenshot or screen recording up to 150 MB. It is included in the diagnostics ZIP.</string>
+    <string name="diagnostics_add_evidence">Add screenshot/video</string>
+    <string name="diagnostics_evidence_added">%1$s added to the diagnostics package</string>
+    <string name="diagnostics_share">Share diagnostics package</string>
+    <string name="diagnostics_save_to_downloads">Save to Downloads</string>
+    <string name="diagnostics_saved_to_downloads">Diagnostics package saved to Downloads</string>
+    <string name="diagnostics_action_failed">Action failed: %1$s</string>
+    <string name="diagnostics_recent_events">Recent events</string>
+
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_description">Stages BAK theme backups for system restore with optional translation, and separately translates MTZ files into Downloads.</string>
+    <string name="about_rootless_title">Rootless operation</string>
+    <string name="about_rootless_description">This app does not use root, su, Magisk, Shizuku or ADB privileges. MTZ processing runs inside the app sandbox; placing a BAK in AllBackup uses only the storage access that you approve in Android.</string>
+    <string name="about_privacy_title">Privacy</string>
+    <string name="about_privacy_description">Files are processed on the device. Live Diagnostics does not record raw document addresses or other apps. While diagnostics access is enabled, it may take a limited number of screenshots only from Xiaomi Themes and MIUI Backup. Reports are never uploaded automatically.</string>
+
+    <!-- Storage Permission -->
+    <string name="permission_storage_title">AllBackup Access Required</string>
+    <string name="permission_storage_desc">Choose only MIUI/backup/AllBackup for privacy-friendly access, or grant all-files access if your Xiaomi file picker cannot select it.</string>
+    <string name="permission_storage_grant">Grant All-Files Access</string>
+    <string name="permission_storage_granted">Storage Access Granted</string>
+    <string name="permission_choose_folder">Select Only AllBackup Folder</string>
+    <string name="permission_folder_granted">AllBackup folder access granted</string>
+
+    <!-- File Picker & Staging -->
+    <string name="bak_importer_title">BAK Theme Import</string>
+    <string name="bak_importer_desc">Select a ready-made BAK file. Optionally translate its theme text, or prepare it unchanged for Xiaomi Backup &amp; Restore.</string>
+    <string name="professional_translation_active">Advanced API translation enabled · %1$s</string>
+    <string name="professional_translation_used">Advanced API translation was used for %1$d strings.</string>
+    <string name="professional_translation_partial_fallback">Advanced API translation was used for %1$d strings; results that failed validation safely fell back to the on-device engine.</string>
+    <string name="action_pick_bak">Select BAK File</string>
+    <string name="action_pick_mtz">Select MTZ Theme</string>
+    <string name="action_stage_backup">Prepare for Restore</string>
+    <string name="action_stage_and_open">Prepare &amp; Open Restore</string>
+    <string name="action_translate_stage_backup">Translate &amp; Prepare for Restore</string>
+    <string name="action_translate_stage_and_open">Translate, Prepare &amp; Open Restore</string>
+    <string name="action_open_restore_screen">Open Backup &amp; Restore</string>
+    <string name="action_open_themes">Open Xiaomi Themes</string>
+    <string name="action_clean_backups">Delete Backup</string>
+    <string name="action_refresh">Refresh</string>
+
+    <!-- Archive Details -->
+    <string name="archive_details_title">Backup Details</string>
+    <string name="archive_file_name">File Name</string>
+    <string name="archive_size">Size</string>
+    <string name="archive_version_code">BAK Version Code</string>
+    <string name="archive_entries_count">Payload Files</string>
+    <string name="archive_apply_rights">Apply-rights Record</string>
+    <string name="archive_apply_rights_present">Present (%1$d)</string>
+    <string name="archive_apply_rights_missing">Missing (%1$d)</string>
+    <string name="archive_apply_rights_warning">This backup can be restored, but Xiaomi Themes may return downloadRight|409/413 while applying because no signed apply-rights record is present.</string>
+    <string name="archive_device_version">Device Theme Manager</string>
+    <string name="version_match_ok">Versions match</string>
+    <string name="version_mismatch_warning">Version mismatch: BAK (%1$d) vs Device (%2$d). MIUI might fail restore if versions don\'t match.</string>
+    <string name="version_patch_checkbox">Allow version mismatch</string>
+
+    <!-- MTZ Translator -->
+    <string name="mtz_translator_title">MTZ Translator</string>
+    <string name="mtz_translator_desc">Translates visible MTZ theme text to the device language. The result is saved as an MTZ in Downloads/BAK Importer; this section does not create a BAK or apply a theme.</string>
+    <string name="mtz_theme_info">MTZ Theme Information</string>
+    <string name="mtz_theme_name">Theme Name</string>
+    <string name="mtz_theme_author">Author</string>
+    <string name="mtz_theme_version">Version</string>
+    <string name="mtz_source_format">Source Format</string>
+    <string name="mtz_source_format_value">UI %1$d / Adapter %2$s</string>
+    <string name="mtz_translating">Translating theme text… %1$d processed</string>
+    <string name="mtz_translate_saved_success">Translated %1$d text nodes in %2$d files and saved to %3$s.</string>
+    <string name="mtz_translate_failed">Theme translation failed: %1$s</string>
+    <string name="mtz_file_open_failed">The selected MTZ file could not be opened</string>
+    <string name="action_translate_and_save_mtz">Translate and Save as MTZ</string>
+    <string name="mtz_translation_complete">MTZ Translation Complete</string>
+    <string name="mtz_translation_saved_toast">Translated MTZ saved to Downloads/BAK Importer.</string>
+    <string name="translate_bak_before_import_title">Translate the theme inside this BAK</string>
+    <string name="translate_bak_before_import_desc">Can translate HyperOS theme text in every BAK file. The original file is preserved and a translated copy is prepared for restore.</string>
+    <string name="bak_translating">Translating BAK theme components… %1$d texts processed</string>
+    <string name="bak_translate_success">Translated %1$d text nodes across %2$d BAK theme components.</string>
+    <string name="bak_signed_translation_warning">The BAK\'s original Xiaomi verification record may no longer be valid after translation. The backup was still prepared for restore.</string>
+    <string name="translated_mtz_saved_path">Translated MTZ: %1$s</string>
+    <string name="action_share_translated_mtz">Share Translated MTZ</string>
+
+    <!-- Staging Status -->
+    <string name="status_ready">Ready. Select a .bak file to inspect and stage.</string>
+    <string name="status_staging">Staging backup archive to MIUI/backup/AllBackup...</string>
+    <string name="status_staged_success">Successfully staged to %1$s! Ready to restore.</string>
+    <string name="status_error">Error: %1$s</string>
+
+    <!-- Restore Guide Dialog / Screen -->
+    <string name="guide_title">How to Apply a BAK Theme</string>
+    <string name="guide_step_1_title">1. Grant AllBackup Access</string>
+    <string name="guide_step_1_desc">On first use, select only MIUI/backup/AllBackup. If Xiaomi’s picker refuses the folder, use the All Files Access option on the home screen.</string>
+    <string name="guide_step_2_title">2. Select the BAK and Translation</string>
+    <string name="guide_step_2_desc">Open the backup with Select BAK File. Enable the translation option if desired; the app uses Advanced API translation when configured, otherwise free on-device translation.</string>
+    <string name="guide_step_3_title">3. Prepare the Backup</string>
+    <string name="guide_step_3_desc">Tap Prepare &amp; Open Restore. With translation enabled, the button reads Translate, Prepare &amp; Open Restore. The app creates a new date-and-time backup folder.</string>
+    <string name="guide_step_4_title">4. Restore the System Backup</string>
+    <string name="guide_step_4_desc">In Backup &amp; Restore, switch to Restore. Select the newest date-and-time folder, choose Themes, and tap Restore.</string>
+    <string name="guide_step_5_title">5. Apply the Theme</string>
+    <string name="guide_step_5_desc">In Xiaomi Themes, open Profile/Account &gt; My themes, select the restored theme, and tap Apply. If full application is rejected, use Customize Theme to apply Lock screen, Icons, and System UI separately.</string>
+
+    <!-- General -->
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_delete_title">Delete Backup</string>
+    <string name="dialog_delete_message">Are you sure you want to delete this backup folder (%1$s)?</string>
+    <string name="no_backups_found">No backups found in MIUI/backup/AllBackup.</string>
+    <string name="folder_staged">Staged folder: %1$s</string>
+</resources>

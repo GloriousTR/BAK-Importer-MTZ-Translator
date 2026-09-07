@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HyperOS BAK Importer</string>
+    <string name="app_subtitle">BAK Aktarıcı ve MTZ Çevirmen</string>
+
+    <!-- Navigation & Tabs -->
+    <string name="tab_import">BAK Importer</string>
+    <string name="tab_mtz">MTZ Translator</string>
+    <string name="tab_backups">Yedek Klasörleri</string>
+    <string name="tab_guide">Nasıl Yapılır?</string>
+
+    <!-- Overlay menu -->
+    <string name="menu_title">Menü</string>
+    <string name="menu_subtitle">Çeviri ayarları, tanılama ve uygulama bilgileri</string>
+    <string name="menu_close">Kapat</string>
+    <string name="diagnostics_menu_description">Rootsuz aktarımın tamamını kaydedip tek paket olarak paylaşın</string>
+    <string name="about_menu_description">Sürüm, özellikler ve gizlilik bilgileri</string>
+    <string name="ai_settings_menu_description">Kişisel API anahtarınızla gelişmiş API çevirisini yapılandırın</string>
+
+    <!-- Advanced API Translation -->
+    <string name="ai_settings_title">Gelişmiş API Çeviri</string>
+    <string name="ai_settings_description">Etkinleştirildiğinde tema metinleri bağlamlarıyla birlikte yapay zekâya gönderilir. Başarısız veya doğrulanamayan metinlerde cihaz içi çeviri otomatik kullanılır.</string>
+    <string name="ai_optional_notice">API zorunlu değildir. Anahtar eklemeden ücretsiz cihaz içi çeviri kullanılabilir; dil modeli ilk kullanımda indirilebilir.</string>
+    <string name="ai_translator_section">Yapay Zekâ Çevirmeni</string>
+    <string name="ai_provider_label">Model Sağlayıcı</string>
+    <string name="ai_endpoint_label">Özel API adresi</string>
+    <string name="ai_endpoint_help">OpenAI uyumlu HTTPS temel adresi veya /chat/completions adresi</string>
+    <string name="ai_model_label">Model</string>
+    <string name="ai_model_help">Modeli listeden seçebilir veya adını yazabilirsiniz.</string>
+    <string name="ai_api_key_label">Kişisel API anahtarı</string>
+    <string name="ai_api_key_placeholder">API anahtarınızı girin</string>
+    <string name="ai_api_key_saved_placeholder">Şifrelenmiş bir anahtar kayıtlı</string>
+    <string name="ai_api_key_help">Virgülle ayırarak birden fazla anahtar girebilirsiniz. Boş bırakırsanız bu sağlayıcı için kayıtlı anahtar korunur.</string>
+    <string name="ai_system_prompt_label">Sistem İstemi</string>
+    <string name="ai_user_prompt_label">Kullanıcı İstemi</string>
+    <string name="ai_use_context_label">Bağlamı Kullan</string>
+    <string name="ai_use_context_help">Daha fazla token kullanımı pahasına tema çevirisi tutarlılığını artırır.</string>
+    <string name="ai_default_value">Varsayılan</string>
+    <string name="ai_not_selected">Seçilmedi</string>
+    <string name="ai_model_key_first">Canlı model listesini almak için önce bu sağlayıcının API anahtarını girin.</string>
+    <string name="ai_models_empty">Sağlayıcı kullanılabilir bir model döndürmedi.</string>
+    <string name="ai_models_load_failed">Model listesi yüklenemedi.</string>
+    <string name="ai_test">Test Et</string>
+    <string name="ai_testing">Test ediliyor…</string>
+    <string name="ai_test_success">Bağlantı başarılı · Settings → %1$s</string>
+    <string name="ai_privacy_notice">API anahtarı Android Keystore ile bu cihazda şifrelenir, yedeklenmez ve tanılama kayıtlarına eklenmez. Yalnızca çevrilecek görünür metinler doğrudan seçtiğiniz API sağlayıcısına gider. Kullanım ücreti sağlayıcınızdaki hesabınıza aittir.</string>
+    <string name="ai_api_key_required">Gelişmiş API çevirisi için bir API anahtarı girin.</string>
+    <string name="ai_settings_save">Ayarları Kaydet</string>
+    <string name="ai_settings_saved">Çeviri ayarları kaydedildi.</string>
+    <string name="ai_api_key_remove">Kayıtlı API Anahtarını Sil</string>
+    <string name="ai_api_key_removed">API anahtarı bu cihazdan silindi.</string>
+
+    <!-- Live Diagnostics -->
+    <string name="diagnostics_title">Live Diagnostics</string>
+    <string name="diagnostics_description">BAK seçimi, isteğe bağlı çeviri, geri yükleme ve Temalar’a geçiş adımlarını kaydeder. Tanılama paketi yalnızca siz Paylaş düğmesine bastığınızda gönderilir.</string>
+    <string name="diagnostics_session">Oturum: %1$s</string>
+    <string name="diagnostics_phase">Son durum: %1$s</string>
+    <string name="diagnostics_start_test">Yeni test kaydı başlat</string>
+    <string name="diagnostics_new_session_started">Yeni test kaydı başlatıldı</string>
+    <string name="diagnostics_session_started_access_required">Test başladı ancak Temalar geri bildirim erişimi kapalı. Yedekleme veya Temalar\'ı açmadan önce aşağıdan etkinleştirin; aksi halde raporun sistem bölümü eksik kalır.</string>
+    <string name="diagnostics_feedback_access">Temalar geri bildirim erişimi</string>
+    <string name="diagnostics_access_enabled">Erişim etkin; Temalar ve Yedekleme ekran geçişleri ile toast mesajları alınabilir.</string>
+    <string name="diagnostics_access_disabled">Erişim kapalı; Temalar uygulamasındaki hata metni otomatik alınamaz.</string>
+    <string name="diagnostics_access_scope">Bu isteğe bağlı rootsuz erişim yalnızca Xiaomi Temalar ve MIUI Yedekleme ile sınırlıdır. Etkin test sırasında görünür metinleri ve sınırlı sayıda ekran görüntüsünü kaydeder; kendiliğinden paylaşmaz. Kişisel hesap bilgileri görünürken test başlatmayın.</string>
+    <string name="diagnostics_open_accessibility">Tanılama erişimini aç</string>
+    <string name="diagnostics_stop_capture">Canlı kaydı durdur</string>
+    <string name="diagnostics_resume_capture">Canlı kaydı sürdür</string>
+    <string name="diagnostics_accessibility_label">BAK Importer Tanılama Erişimi</string>
+    <string name="diagnostics_accessibility_description">Yalnızca etkin bir test sırasında Xiaomi Temalar ve MIUI Yedekleme ekranlarındaki görünür metinleri ve sınırlı sayıda ekran görüntüsünü tanılama raporuna ekler.</string>
+    <string name="diagnostics_reproduce_title">Hatayı yeniden oluşturun</string>
+    <string name="diagnostics_reproduce_steps">1. Yeni test başlatın. 2. BAK dosyasını çevirerek veya değiştirmeden hazırlayın. 3. Yedeği geri yükleyin. 4. Temalar’da Uygula’ya basın. 5. Bu ekrana dönüp sonucu işaretleyin ve raporu paylaşın.</string>
+    <string name="diagnostics_open_restore">Yedekleme</string>
+    <string name="diagnostics_open_themes">Temalar</string>
+    <string name="diagnostics_mark_error">Hata oluştu</string>
+    <string name="diagnostics_mark_success">Başarılı oldu</string>
+    <string name="diagnostics_error_note">Gördüğünüz hata</string>
+    <string name="diagnostics_error_note_hint">Örnek: Ağa bağlanılamadı — downloadRight|409</string>
+    <string name="diagnostics_save_note">Hata notunu kaydet</string>
+    <string name="diagnostics_note_saved">Hata notu kaydedildi</string>
+    <string name="diagnostics_evidence_title">Ekran kanıtı</string>
+    <string name="diagnostics_evidence_description">İsterseniz ekran görüntüsü veya en fazla 150 MB’lık ekran kaydı ekleyebilirsiniz. Dosya tanılama ZIP’ine dahil edilir.</string>
+    <string name="diagnostics_add_evidence">Ekran görüntüsü/video ekle</string>
+    <string name="diagnostics_evidence_added">%1$s tanılama paketine eklendi</string>
+    <string name="diagnostics_share">Tanılama paketini paylaş</string>
+    <string name="diagnostics_save_to_downloads">İndirilenler\'e kaydet</string>
+    <string name="diagnostics_saved_to_downloads">Tanılama paketi İndirilenler\'e kaydedildi</string>
+    <string name="diagnostics_action_failed">İşlem tamamlanamadı: %1$s</string>
+    <string name="diagnostics_recent_events">Son olaylar</string>
+
+    <!-- About -->
+    <string name="about_title">Hakkında</string>
+    <string name="about_version">Sürüm %1$s</string>
+    <string name="about_description">BAK tema yedeklerini isteğe bağlı çevirerek sistem geri yükleme alanına aktarır; MTZ dosyalarını ayrıca çevirip İndirilenler’e kaydeder.</string>
+    <string name="about_rootless_title">Rootsuz çalışma</string>
+    <string name="about_rootless_description">Bu uygulama root, su, Magisk, Shizuku veya ADB yetkisi kullanmaz. MTZ çevirileri uygulamanın kendi alanında yapılır; BAK dosyasını AllBackup’a yerleştirmek için yalnızca Android’de sizin onayladığınız depolama erişimi kullanılır.</string>
+    <string name="about_privacy_title">Gizlilik</string>
+    <string name="about_privacy_description">Dosyalar cihazınızda işlenir. Live Diagnostics ham belge adreslerini veya başka uygulamaları kaydetmez. Tanılama erişimi açıkken yalnızca Xiaomi Temalar ve MIUI Yedekleme ekranlarından sınırlı görüntü alabilir; rapor kendiliğinden yüklenmez.</string>
+
+    <!-- Storage Permission -->
+    <string name="permission_storage_title">AllBackup Erişimi Gerekli</string>
+    <string name="permission_storage_desc">Gizlilik için yalnızca MIUI/backup/AllBackup klasörünü seçin. Xiaomi dosya seçici buna izin vermezse tüm dosyalara erişimi kullanabilirsiniz.</string>
+    <string name="permission_storage_grant">Tüm Dosyalara Erişim Ver</string>
+    <string name="permission_storage_granted">Depolama İzni Verildi</string>
+    <string name="permission_choose_folder">Yalnızca AllBackup Klasörünü Seç</string>
+    <string name="permission_folder_granted">AllBackup klasör erişimi verildi</string>
+
+    <!-- File Picker & Staging -->
+    <string name="bak_importer_title">BAK Tema Aktarımı</string>
+    <string name="bak_importer_desc">Hazır bir BAK dosyasını seçin. Tema metinlerini isteğe bağlı çevirin veya dosyayı değiştirmeden Xiaomi’nin Yedekle ve Geri Yükle alanına hazırlayın.</string>
+    <string name="professional_translation_active">Gelişmiş API çevirisi etkin · %1$s</string>
+    <string name="professional_translation_used">%1$d metinde gelişmiş API çevirisi kullanıldı.</string>
+    <string name="professional_translation_partial_fallback">%1$d metinde gelişmiş API çevirisi kullanıldı; doğrulanamayan sonuçlar güvenli biçimde cihaz içi motora bırakıldı.</string>
+    <string name="action_pick_bak">BAK Dosyası Seç</string>
+    <string name="action_pick_mtz">MTZ Teması Seç</string>
+    <string name="action_stage_backup">Geri Yüklemeye Hazırla</string>
+    <string name="action_stage_and_open">Hazırla ve Geri Yüklemeyi Aç</string>
+    <string name="action_translate_stage_backup">Çevir ve Geri Yüklemeye Hazırla</string>
+    <string name="action_translate_stage_and_open">Çevir, Hazırla ve Geri Yüklemeyi Aç</string>
+    <string name="action_open_restore_screen">Yedekle ve Geri Yükle\'yi Aç</string>
+    <string name="action_open_themes">Xiaomi Temalar\'ı Aç</string>
+    <string name="action_clean_backups">Yedeği Sil</string>
+    <string name="action_refresh">Yenile</string>
+
+    <!-- Archive Details -->
+    <string name="archive_details_title">Yedek Dosyası Detayları</string>
+    <string name="archive_file_name">Dosya Adı</string>
+    <string name="archive_size">Boyut</string>
+    <string name="archive_version_code">BAK Sürüm Kodu</string>
+    <string name="archive_entries_count">Paket İçi Dosya Sayısı</string>
+    <string name="archive_apply_rights">Uygulama Hakkı Kaydı</string>
+    <string name="archive_apply_rights_present">Mevcut (%1$d)</string>
+    <string name="archive_apply_rights_missing">Bulunamadı (%1$d)</string>
+    <string name="archive_apply_rights_warning">Bu yedek geri yüklenebilir; ancak Xiaomi Temalar, imzalı uygulama hakkı bulunmadığı için uygulama aşamasında downloadRight|409/413 hatası verebilir.</string>
+    <string name="archive_device_version">Cihazdaki Temalar Sürümü</string>
+    <string name="version_match_ok">Sürümler eşleşiyor</string>
+    <string name="version_mismatch_warning">Sürüm uyuşmazlığı: BAK (%1$d) vs Cihaz (%2$d). MIUI sürümler farklı olduğunda geri yüklemeyi reddedebilir.</string>
+    <string name="version_patch_checkbox">Sürüm farkına rağmen devam et</string>
+
+    <!-- MTZ Translator -->
+    <string name="mtz_translator_title">MTZ Translator</string>
+    <string name="mtz_translator_desc">MTZ temasındaki görünen metinleri cihaz diline çevirir. Sonuç, MTZ olarak İndirilenler/BAK Importer klasörüne kaydedilir; bu bölüm BAK oluşturmaz veya tema uygulamaz.</string>
+    <string name="mtz_theme_info">MTZ Tema Bilgisi</string>
+    <string name="mtz_theme_name">Tema Adı</string>
+    <string name="mtz_theme_author">Yazar</string>
+    <string name="mtz_theme_version">Sürüm</string>
+    <string name="mtz_source_format">Kaynak Biçimi</string>
+    <string name="mtz_source_format_value">UI %1$d / Adaptör %2$s</string>
+    <string name="mtz_translating">Tema metinleri çevriliyor… %1$d metin işlendi</string>
+    <string name="mtz_translate_saved_success">%2$d dosyada %1$d metin alanı çevrildi ve %3$s konumuna kaydedildi.</string>
+    <string name="mtz_translate_failed">Tema çevrilemedi: %1$s</string>
+    <string name="mtz_file_open_failed">Seçilen MTZ dosyası açılamadı</string>
+    <string name="action_translate_and_save_mtz">Çevir ve MTZ Olarak Kaydet</string>
+    <string name="mtz_translation_complete">MTZ Çevirisi Tamamlandı</string>
+    <string name="mtz_translation_saved_toast">Çevrilmiş MTZ, İndirilenler/BAK Importer klasörüne kaydedildi.</string>
+    <string name="translate_bak_before_import_title">Bu BAK içindeki temayı çevir</string>
+    <string name="translate_bak_before_import_desc">Her BAK dosyasındaki HyperOS tema metinlerini çevirebilir. Orijinal dosya korunur ve geri yükleme için çevrilmiş bir kopya hazırlanır.</string>
+    <string name="bak_translating">BAK tema bileşenleri çevriliyor… %1$d metin işlendi</string>
+    <string name="bak_translate_success">%2$d BAK tema bileşeninde %1$d metin alanı çevrildi.</string>
+    <string name="bak_signed_translation_warning">Bu BAK’ın özgün Xiaomi doğrulama kaydı çeviri nedeniyle artık geçerli olmayabilir. Yedek yine geri yüklemeye hazırlandı.</string>
+    <string name="translated_mtz_saved_path">Çevrilmiş MTZ: %1$s</string>
+    <string name="action_share_translated_mtz">Çevrilmiş MTZ’yi Paylaş</string>
+
+    <!-- Staging Status -->
+    <string name="status_ready">Hazır. İncelemek ve yerleştirmek için bir .bak dosyası seçin.</string>
+    <string name="status_staging">Yedek arşivi MIUI/backup/AllBackup dizinine hazırlanıyor...</string>
+    <string name="status_staged_success">%1$s konumuna başarıyla yerleştirildi! Geri yükleme hazır.</string>
+    <string name="status_error">Hata: %1$s</string>
+
+    <!-- Restore Guide Dialog / Screen -->
+    <string name="guide_title">BAK Teması Nasıl Uygulanır?</string>
+    <string name="guide_step_1_title">1. AllBackup Erişimini Verin</string>
+    <string name="guide_step_1_desc">İlk kullanımda yalnızca MIUI/backup/AllBackup klasörünü seçin. Xiaomi dosya seçicisi klasörü onaylamıyorsa ana sayfadaki Tüm Dosyalara Erişim seçeneğini kullanın.</string>
+    <string name="guide_step_2_title">2. BAK Dosyasını ve Çeviriyi Seçin</string>
+    <string name="guide_step_2_desc">BAK Dosyası Seç ile yedeği açın. Temayı çevirmek istiyorsanız çeviri kutusunu işaretleyin; API ayarlıysa Gelişmiş API çevirisi, değilse ücretsiz cihaz içi çeviri kullanılır.</string>
+    <string name="guide_step_3_title">3. Yedeği Hazırlayın</string>
+    <string name="guide_step_3_desc">Hazırla ve Geri Yüklemeyi Aç düğmesine basın. Çeviri seçiliyse düğme Çevir, Hazırla ve Geri Yüklemeyi Aç olarak görünür. Uygulama tarih-saat adlı yeni bir yedek klasörü oluşturur.</string>
+    <string name="guide_step_4_title">4. Sistem Yedeğini Geri Yükleyin</string>
+    <string name="guide_step_4_desc">Açılan Yedekle ve Geri Yükle ekranında Geri Yükle sekmesine geçin. En yeni tarih-saat klasörünü seçin, Temalar öğesini işaretleyin ve Geri Yükle’ye basın.</string>
+    <string name="guide_step_5_title">5. Temayı Uygulayın</string>
+    <string name="guide_step_5_desc">Xiaomi Temalar’da Profil/Hesabım &gt; Temalarım bölümünü açın, geri yüklenen temayı seçip Uygula’ya basın. Tam uygulama reddedilirse Temayı Kişiselleştir/Özelleştir bölümünden Kilit ekranı, Simgeler ve Sistem öğelerini ayrı ayrı uygulayın.</string>
+
+    <!-- General -->
+    <string name="dialog_ok">Tamam</string>
+    <string name="dialog_cancel">İptal</string>
+    <string name="dialog_confirm">Onayla</string>
+    <string name="dialog_delete_title">Yedeği Sil</string>
+    <string name="dialog_delete_message">Bu yedek klasörünü (%1$s) silmek istediğinizden emin misiniz?</string>
+    <string name="no_backups_found">MIUI/backup/AllBackup dizininde yedek bulunamadı.</string>
+    <string name="folder_staged">Yerleştirilen klasör: %1$s</string>
+</resources>

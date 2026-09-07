@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF673AB7</color>
+    <color name="primary_dark">#FF512DA8</color>
+    <color name="accent">#FFFF6D00</color>
+    <color name="hyperos_blue">#FF007AFF</color>
+    <color name="hyperos_orange">#FFFF6E26</color>
+</resources>
