@@ -48,7 +48,15 @@ class ThemeLanguageTool(
 
         try {
             val professionalResult = professionalTranslator?.let { translator ->
+                // Curated translations are authoritative and instantaneous. Sending those same
+                // strings to the API wastes response time and tokens because the rewrite step
+                // would choose the glossary result anyway.
                 val candidates = ProfessionalThemeTranslator.collectCandidates(source, target)
+                    .filterNot { text ->
+                        ThemeGlossary.resolve(text, target) != null ||
+                            ConversationalThemeGlossary.resolve(text, target) != null ||
+                            ThemeGlossary.convertDatePattern(text, target) != null
+                    }
                 translator.translate(candidates, locale)
             } ?: ProfessionalThemeTranslator.Result(emptyMap(), emptyList())
             val professionalTranslations = professionalResult.translations
